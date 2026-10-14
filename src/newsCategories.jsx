@@ -1,162 +1,134 @@
 export const CATEGORY_TOPICS = {
-  general: 'latest breaking news world general',
-  tech: 'technology software artificial intelligence gadgets computing',
-  business: 'finance economy stock market business industry',
-  entertainment: 'movies cinema music culture entertainment hollywood',
-  sports: 'football basketball tennis athletics sports championship',
-  science: 'science space physics biology research astronomy',
-  health: 'medicine health wellness medical research fitness',
-  world: 'international global politics diplomacy world news'
+  general: 'Nigeria breaking news headlines Lagos Abuja',
+  politics: 'Nigeria politics government election Tinubu Senate policy',
+  business: 'Nigeria economy naira stock market business CBN inflation',
+  sports: 'Super Eagles NPFL Nigerian football sports CAF AFCON',
+  entertainment: 'Afrobeats Nollywood Nigerian music entertainment celebrity',
+  technology: 'Nigeria tech startups fintech Lagos Silicon Lagoon',
+  science: 'Nigeria science research innovation space agency NASRDA',
+  health: 'Nigeria health NCDC medical sector wellness'
 };
 
 export const FALLBACK_ARTICLES = {
   general: [
     {
-      title: "Global Climate Summit Reaches Historic Agreement on Renewable Transition",
-      snippet: "Delegates from over 190 nations have finalized a landmark treaty accelerating green energy adoption over the next decade.",
+      title: "Federal Government Announces New Infrastructure Financing Strategy for Regional Roads",
+      snippet: "The Ministry of Works outlines public-private partnership milestones targeting key federal corridors across the geopolitical zones.",
       url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-11"
+      urlToImage: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80",
+      publishedAt: "2026-10-14"
     },
     {
-      title: "Major Breakthrough Achieved in Quantum Computing Architecture",
-      snippet: "Researchers successfully maintain coherent qubit entanglement at room temperature, paving the way for commercial deployment.",
-      url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-11"
-    },
-    {
-      title: "International Space Station Welcomes New Long-Duration Crew",
-      snippet: "The multinational team arrived safely aboard a commercial crew vehicle to begin a six-month orbital science mission.",
-      url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-10"
-    },
-    {
-      title: "Global Supply Chains Adapt to Autonomous Freight Networks",
-      snippet: "Major shipping hubs report increased efficiency and reduced emissions following widespread rollout of automated logistics.",
-      url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-10"
-    }
-  ],
-  tech: [
-    {
-      title: "Next-Gen Neural Interfaces Enter Clinical Trial Phase",
-      snippet: "Advanced brain-computer interfaces demonstrate high fidelity signal decoding for assistive prosthetic control.",
+      title: "Tech Hubs in Lagos and Abuja Report Surge in Seed Investments",
+      snippet: "Nigerian startup ecosystems continue to attract venture capital funding focusing on fintech, logistics, and agritech.",
       url: "#",
       urlToImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-11"
+      publishedAt: "2026-10-14"
     },
     {
-      title: "Open Source AI Models Surpass Commercial Benchmarks",
-      snippet: "Community-driven foundation models show unprecedented efficiency on edge hardware devices.",
+      title: "National Power Grid Records Stable Generation Output Peak",
+      snippet: "System operators confirm improved performance across thermal and hydro power stations serving commercial distribution networks.",
       url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-10"
+      urlToImage: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
+      publishedAt: "2026-10-13"
     },
     {
-      title: "Cybersecurity Standards Updated for Zero-Trust Cloud Infrastructure",
-      snippet: "Global agencies mandate rigorous cryptographic verification protocols for enterprise cloud deployments.",
+      title: "Agricultural Export Initiatives Boost Non-Oil Revenue Metrics",
+      snippet: "Customs and trade boards highlight increased volume in processed commodity exports to international markets.",
       url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-09"
+      urlToImage: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80",
+      publishedAt: "2026-10-13"
+    }
+  ],
+  politics: [
+    {
+      title: "National Assembly Deliberates on Fiscal Policy and Budget Adjustments",
+      snippet: "Legislators review proposed allocation frameworks aimed at strengthening sub-national developmental projects.",
+      url: "#",
+      urlToImage: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80",
+      publishedAt: "2026-10-14"
+    },
+    {
+      title: "Electoral Commission Reviews Guidelines for Upcoming State Balloting",
+      snippet: "INEC engages stakeholders on technological upgrades to accreditation procedures and result verification.",
+      url: "#",
+      urlToImage: "https://images.unsplash.com/photo-1555848962-6e79363ec58f?auto=format&fit=crop&w=800&q=80",
+      publishedAt: "2026-10-13"
     }
   ],
   business: [
     {
-      title: "Central Banks Evaluate Digital Currency Frameworks",
-      snippet: "Financial authorities release comprehensive guidelines for interoperable retail central bank digital currencies.",
+      title: "Central Bank Maintains Monetary Stance to Stabilize Foreign Exchange Liquidity",
+      snippet: "Financial analysts evaluate recent market interventions and trade balance reports from the banking sector.",
       url: "#",
       urlToImage: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-11"
+      publishedAt: "2026-10-14"
     },
     {
-      title: "Renewable Energy Investments Outpace Fossil Fuels for Third Consecutive Year",
-      snippet: "Institutional capital flows heavily into solar, wind, and grid storage infrastructure worldwide.",
+      title: "Nigerian Exchange Group Closes Trading Session with Positive Equities Growth",
+      snippet: "Banking and industrial counters lead market capitalization gains amid strong institutional investor interest.",
       url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-10"
+      urlToImage: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800&q=80",
+      publishedAt: "2026-10-13"
     }
   ],
   sports: [
     {
-      title: "World Athletics Championship Sets New Standards in Marathons",
-      snippet: "Elite runners shatter previous course records under optimal weather conditions in Berlin.",
+      title: "Super Eagles Intensify Training Camp Ahead of Crucial World Cup Qualifiers",
+      snippet: "Technical crew expresses confidence as invited foreign and domestic professionals arrive at camp.",
       url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-11"
+      urlToImage: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80",
+      publishedAt: "2026-10-14"
     },
     {
-      title: "Continental Football League Announces Expanded Playoff Format",
-      snippet: "Club executives agree on a modernized tournament structure beginning next season.",
+      title: "NPFL Matchday Action Delivers Thrilling Goalscoring Encounters Across Stadiums",
+      snippet: "Club managers analyze tactical adjustments as the league table enters a highly competitive phase.",
       url: "#",
       urlToImage: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-10"
+      publishedAt: "2026-10-13"
     }
   ],
   entertainment: [
     {
-      title: "Immersive Audio Cinema Experiences Transform Film Distribution",
-      snippet: "Studio executives highlight spatial sound technologies as the primary driver for theatrical attendance.",
-      url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-11"
-    },
-    {
-      title: "Global Music Festival Celebrates Fusion of Traditional and Electronic Genres",
-      snippet: "Artists from diverse cultural backgrounds converge for a sold-out weekend celebration.",
+      title: "Afrobeats Global Dominance Recognized at International Music Ceremonies",
+      snippet: "Nigerian recording artists continue to break streaming records and sell out arenas across North America and Europe.",
       url: "#",
       urlToImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-10"
+      publishedAt: "2026-10-14"
+    },
+    {
+      title: "Nollywood Blockbuster Sets New Box Office Benchmarks in Cinemas Worldwide",
+      snippet: "Cinematographers praise the production quality, narrative depth, and widespread international distribution deals.",
+      url: "#",
+      urlToImage: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80",
+      publishedAt: "2026-10-13"
+    }
+  ],
+  technology: [
+    {
+      title: "Lagos Tech Week Convenes Industry Leaders to Discuss Artificial Intelligence Integration",
+      snippet: "Founders and software engineers explore scalable solutions tailored for African emerging markets.",
+      url: "#",
+      urlToImage: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
+      publishedAt: "2026-10-14"
     }
   ],
   science: [
     {
-      title: "Deep Space Telescope Detects Atmospheric Signatures on Exoplanet",
-      snippet: "Spectroscopic analysis reveals complex molecular compounds in the habitable zone of a nearby star system.",
+      title: "Nigerian Space Agency Advances Satellite Remote Sensing Applications",
+      snippet: "Geospatial data assists agricultural planning, environmental monitoring, and disaster management initiatives.",
       url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-11"
-    },
-    {
-      title: "Marine Biologists Map Newly Discovered Deep Sea Ecosystem",
-      snippet: "Autonomous submersibles document unique hydrothermal vent communities thriving in total darkness.",
-      url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-10"
+      urlToImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+      publishedAt: "2026-10-14"
     }
   ],
   health: [
     {
-      title: "Clinical Trials Show Promising Results for Cellular Longevity Research",
-      snippet: "Biomedical researchers publish peer-reviewed data on cellular repair mechanisms.",
+      title: "Public Health Campaigns Roll Out Expanded Immunization and Wellness Programs",
+      snippet: "Healthcare workers collaborate across communities to improve primary healthcare delivery metrics.",
       url: "#",
       urlToImage: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-11"
-    },
-    {
-      title: "Public Health Initiatives Focus on Preventive Nutritional Science",
-      snippet: "Global health organizations advocate for diet-informed wellness programs in primary care settings.",
-      url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-10"
-    }
-  ],
-  world: [
-    {
-      title: "Diplomatic Summit Addresses Cross-Border Infrastructure Initiatives",
-      snippet: "Regional leaders sign cooperation pacts to streamline transportation and trade corridors.",
-      url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-11"
-    },
-    {
-      title: "Urban Planning Forum Highlights Sustainable Mega-City Models",
-      snippet: "Architects and urban planners showcase pedestrian-centric transit systems designed for future populations.",
-      url: "#",
-      urlToImage: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=800&q=80",
-      publishedAt: "2026-10-10"
+      publishedAt: "2026-10-14"
     }
   ]
 };

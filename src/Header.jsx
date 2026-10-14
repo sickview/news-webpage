@@ -3,11 +3,11 @@ import React from 'react';
 export default function Header({ activeCategory, setActiveCategory, searchQuery, setSearchQuery, isDarkMode, setIsDarkMode }) {
   const categories = [
     { id: 'general', label: 'General' },
-    { id: 'world', label: 'World' },
-    { id: 'tech', label: 'Technology' },
+    { id: 'politics', label: 'Politics' },
     { id: 'business', label: 'Business' },
-    { id: 'entertainment', label: 'Entertainment' },
     { id: 'sports', label: 'Sports' },
+    { id: 'entertainment', label: 'Entertainment' },
+    { id: 'technology', label: 'Technology' },
     { id: 'science', label: 'Science' },
     { id: 'health', label: 'Health' }
   ];
@@ -15,18 +15,18 @@ export default function Header({ activeCategory, setActiveCategory, searchQuery,
   return (
     <header className="header">
       <div className="ticker-bar">
-        <span className="ticker-badge">Live Ticker</span>
-        <span>AllDay News Channel breaking updates streaming worldwide 24/7. Stay informed with verified global reporting.</span>
+        <span className="ticker-badge">Nigeria Live Feed</span>
+        <span>AllDay News Channel — Bringing you verified 24/7 coverage across Lagos, Abuja, and nationwide updates.</span>
       </div>
       <div className="header-top">
         <div className="logo-area">
           <h1>ALLDAY<span>NEWS</span></h1>
-          <p>Global Channel Network</p>
+          <p>Nigeria News Network</p>
         </div>
         <div className="header-controls">
           <input
             type="text"
-            placeholder="Search news..."
+            placeholder="Search Nigerian news..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="search-input"

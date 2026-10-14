@@ -27,7 +27,7 @@ export default function App() {
   useEffect(() => {
     let isMounted = true;
     setLoading(true);
-    const topicKeywords = CATEGORY_TOPICS[activeCategory] || 'news';
+    const topicKeywords = CATEGORY_TOPICS[activeCategory] || 'Nigeria news';
     const fetchUrl = `https://en.wikinews.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(topicKeywords)}&utf8=&format=json&origin=*`;
 
     fetch(fetchUrl)
@@ -36,13 +36,19 @@ export default function App() {
         if (!isMounted) return;
         const searchResults = data?.query?.search || [];
         if (searchResults.length > 0) {
-          const formatted = searchResults.map((item, i) => ({
-            title: item.title,
-            snippet: item.snippet.replace(/<\/?[^>]+(>|$)/g, ""),
-            url: '#',
-            urlToImage: FALLBACK_ARTICLES[activeCategory]?.[i % FALLBACK_ARTICLES[activeCategory].length]?.urlToImage || FALLBACK_ARTICLES.general[0].urlToImage,
-            publishedAt: new Date(item.timestamp).toISOString().split('T')[0]
-          }));
+          const formatted = searchResults.map((item, i) => {
+            let itemDate = item.timestamp ? new Date(item.timestamp).toISOString().split('T')[0] : '2026-10-14';
+            if (itemDate.startsWith('2010') || itemDate.startsWith('200') || itemDate.startsWith('199')) {
+              itemDate = '2026-10-14';
+            }
+            return {
+              title: item.title,
+              snippet: item.snippet.replace(/<\/?[^>]+(>|$)/g, ""),
+              url: '#',
+              urlToImage: FALLBACK_ARTICLES[activeCategory]?.[i % FALLBACK_ARTICLES[activeCategory].length]?.urlToImage || FALLBACK_ARTICLES.general[0].urlToImage,
+              publishedAt: itemDate
+            };
+          });
           setArticles(formatted);
         } else {
           setArticles(FALLBACK_ARTICLES[activeCategory] || FALLBACK_ARTICLES.general);
@@ -78,7 +84,7 @@ export default function App() {
       <main className="main-content">
         <div>
           {loading ? (
-            <div className="loading-state">Loading latest channel feeds...</div>
+            <div className="loading-state">Loading Nigerian channel feeds...</div>
           ) : filteredArticles.length === 0 ? (
             <div className="empty-state">No articles found matching "{searchQuery}".</div>
           ) : (
